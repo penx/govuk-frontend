@@ -1,0 +1,19 @@
+@import "../tools/exports";
+@import "../core/links";
+@import "../core/typography";
+
+@mixin govuk-global-styles {
+  a {
+    @extend %govuk-link;
+  }
+
+  p {
+    @extend %govuk-body-m;
+  }
+}
+
+@include govuk-exports("govuk-global-styles") {
+  @if global-variable-exists("govuk-global-styles") == false or $govuk-global-styles == true {
+    @include govuk-global-styles;
+  }
+}
