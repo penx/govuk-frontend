@@ -86,7 +86,8 @@
     "ignore": [
       "/dist/**/*.js",
       "/packages/**/*.js",
-      "/src/globals/polyfills/**/*.js"
+      "/src/globals/polyfills/**/*.js",
+      "/docs/js/webpack.config.js"
     ]
   },
   "jest": {
