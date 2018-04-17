@@ -95,6 +95,20 @@ After resolving the import paths you can import GOV.UK Frontend by using:
 @import "@govuk-frontend/button/button";
 ```
 
+### Import JavaScript
+
+You need to import the GOV.UK Frontend scripts into the main JavaScript file in your project.
+
+To import and initialise all components that require JavaScript, add the below to your main JavaScript file:
+```JS
+import Button from 'node_modules/@govuk-frontend/all/all'
+```
+
+To import an individual component (for example a button), add the below to your main JavaScript file:
+```JS
+import Button from 'node_modules/@govuk-frontend/button/button'
+```
+
 ### Import images and icons
 
 In order to import GOV.UK Frontend images and icons to your project, you should configure your application to reference or copy the relevant GOV.UK Frontend assets.
