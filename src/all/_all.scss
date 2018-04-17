@@ -1,5 +1,9 @@
+// optional setting of global styles for <a> and <p>
+$govuk-global-styles: true !default;
+
 // Settings
 @import "../globals/common";
+@import "../globals/optional/global-styles";
 
 // Components
 @import "../back-link/back-link";
